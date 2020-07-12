@@ -1,0 +1,175 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<title>网络文摘(Digest)2.0说明文件</title>
+<style type="text/css">
+<!--
+.style1 {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 36px;
+	font-weight: bold;
+}
+.style2 {font-family: Georgia, "Times New Roman", Times, serif}
+.style3 {font-family: Georgia, "Times New Roman", Times, serif; font-weight: bold; }
+.style4 {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 18px;
+	font-weight: bold;
+}
+.style6 {font-family: Georgia, "Times New Roman", Times, serif; font-weight: bold; color: #006600; }
+.style8 {font-family: Georgia, "Times New Roman", Times, serif; font-weight: bold; color: #FF0000; }
+.style9 {color: #FF0000}
+-->
+</style>
+</head>
+
+<body>
+<table width="80%" align="center"><tr><td>
+<p align="center"><span class="style1">网络文摘(Digest)2.0说明文件</span><br>
+</p>
+<p align="center" class="style2">（speedy撰写&nbsp;phppp提供支持&nbsp; insraq整理 ）
+</p>
+<p class="style3" align="center">使用网络文摘模块时，请务必详细阅读本说明文档。</p>
+<p class="style3" align="center"><strong>有些空间不能运行该模块，详情请看管理区相关测试。</strong></p>
+<p class="style4">一、安装</p>
+<p class="style2">把从XOOPS.org.cn下载的文件解压缩，得到xoops/modules/digest目录，然后进入modules目录，把digest目录和xconv目录上传到你XOOPS的modules下，再进入“管理区=&gt;系统管理=&gt;模块管理”安装“网络文摘”模块和“Xoops Iconv”模块（图标带有“xconv”文字，）。这样就完成安装了。</p>
+<p class="style3">关于Xoops Iconv模块</p>
+<p class="style2">Xoops Iconv是转换内码的一个模块，比PHP的iconv函数效率更高。如果不想安装，就可以不用上传xconv目录和安装“Xoops Iconv”模块。虽然这个模块不是必须，但是我们非常推荐安装这个模块。</p>
+<p class="style4">二、使用</p>
+<p class="style2"><strong>分类管理：</strong>进入“管理区=&gt;文摘（把鼠标放在左栏带有“Digest”文字的图标）=&gt;分类管理”，来进行分类的管理。</p>
+<p class="style2"><strong>添加网址：</strong>进入“管理区=&gt;文摘（把鼠标放在左栏带有“Digest”文字的图标）=&gt;添加/编辑网址”来添加网址。<br>
+在添加网站之前最好了解并理解<strong> 网络文摘</strong> 的运行机理。成功添加网站有两个基本条件，1.找准网址 ，2.设置好筛选条件。先面试“添加新的站点”里面的各个设置项：</p>
+<p class="style2"><strong>主题:</strong> 一般用几个字符标明，不要太长（所有首页显示的网摘都会显示为“[主题]标题”，因此主题不要太长，否则严重影响显示效果）</p>
+<p class="style2"><strong>网址：</strong>你想要摘取的网页的真实地址，一定要是真实地址，多看点儿网页源代码，务求找对。</p>
+<p class="style2"><strong>描述：</strong>是对“主题”的进一步说明，可以详细一点介绍，可以不填。</p>
+<p class="style2"><strong>分类：</strong>你添加的这个网摘属于什么分类。</p>
+<p class="style2"><strong>站点logo：</strong>没有可以不用。</p>
+<p class="style2"><strong>顺序: </strong>设置这个网站的显示顺序</p>
+<p class="style2"><strong>Online:</strong> 如果填“1”，这个网站将会在前台出现，反之如果添“0”这个网站将不会在前台出现。</p>
+<p class="style2"><strong>Offset:</strong> 页面开头几条不要的条目数，一般为0</p>
+<p class="style2"><strong>最大条目:</strong> 限制要存取的最大新闻条数</p>
+<p class="style2"><strong>有效标题的最小长度: </strong>这个对于筛选链接非常关键也非常好用，把一些标题太短的不是新闻的链接排除掉，这里是算字节，一个中文2个字节。一般设置为10－20左右，具体要视你要摘取的网页的情况而定。</p>
+<p class="style2"><strong>网页charset编码: </strong>一般不用填，如果你发现自己网摘的网站有内容但全是乱码，就填上你摘取的那个网站的编码，修改后再更新数据一次，就不会再乱码的了。</p>
+<p class="style2"><strong>刷新频率:</strong> 填上你要更新网摘数据的频率，单位为分钟</p>
+<p class="style2"><strong>文字过滤的正则表达式：</strong>填上你不想摘录的内容的相关字，这也是筛选超链接的设置之一，比如想筛选掉所有标题带“广告”字眼的超链接，就在这里填上“广告”这个关键词，多个关键词之间用“|”隔开。</p>
+<p class="style2"><strong>可接受链接的标准：</strong>这里是筛选超链接的关键所在。找出你想要网摘的内容的网址之间共通的、而且其它无关内容又没有的关键字。</p>
+<p class="style2"><strong>一些网站的资源列表（只列出关键设置）：</strong></p>
+<p class="style2">主题:MOP<br>
+  描述：猫扑BBS<br>
+网址：http://dzh.mop.com//topic/listSubNormal.jsp<br>
+  最大条目：20<br>
+  有效标题</strong>最小长度：10<br>
+  网页charset编码：不填<br>
+  文字过滤的正则表达式：不填<br>
+可接受链接的标准：static</p>
+<p class="style2"><br>
+  主题:南方心理在线 （该网站使用discuz，这是网摘各discuz论坛帖子的范例）<br>
+  描述：南方心理在线<br>
+  网址：http://www.psyonline.cn/main/bbs/whatsnew.php?fidin=all<br>
+  最大条目：20<br>
+  有效标题最小长度：10<br>
+  网页charset编码：GB2312<br>
+  文字过滤的正则表达式：不填<br>
+  可接受链接的标准：tid<br>
+</p>
+<p class="style2">主题:新浪<br>
+  描述：新浪滚动新闻<br>
+  网址：http://news.sina.com.cn/news1000/index.shtml<br>
+  最大条目：20<br>
+  有效标题最小长度：10<br>
+  网页charset编码：不填<br>
+  文字过滤的正则表达式：不填<br>
+可接受链接的标准：2004- （根据规律，下一年就要改为“2005-”了）</p>
+<p class="style2">主题:搜狐<br>
+  描述：搜狐滚动新闻<br>
+  网址：http://news.sohu.com/news_scrollnews.shtml<br>
+  最大条目：20<br>
+  有效标题最小长度：10<br>
+  网页charset编码：不填<br>
+  文字过滤的正则表达式：不填<br>
+可接受链接的标准：2004 （根据规律，下一年就要改为“2005”了）</p>
+<p class="style2">主题:新华网<br>
+描述：新华网滚动新闻<br>
+网址：http://www.xinhuanet.com/newscenter/gdxw.htm<br>
+最大条目：20<br>
+有效标题最小长度：10<br>
+网页charset编码：不填<br>
+文字过滤的正则表达式：不填<br>
+可接受链接的标准：2004- （根据规律，下一年就要改为“2005-”了）<br>
+<br>
+</p>
+<p class="style2">主题:博客论坛<br>
+  描述：博客论坛<br>
+  网址：http://forum.blogchina.com/recent_100.php<br>
+  最大条目：20<br>
+  有效标题最小长度：10<br>
+  网页charset编码：GB2312<br>
+  文字过滤的正则表达式：不填<br>
+  可接受链接的标准：viewtopic.php <br>
+</p>
+<p class="style2">主题:太平洋<br>
+  描述：太平洋电脑网广州降价快报<br>
+  网址：http://www.pconline.com.cn/market/gz/shoppingguide/dongtai/index.html<br>
+  最大条目：20<br>
+  有效标题最小长度：20<br>
+  网页charset编码：不填<br>
+  文字过滤的正则表达式：不填<br>
+  可接受链接的标准：html</p>
+<p class="style3">小Tips－－让网络文摘的区块分两栏显示</p>
+<p class="style3">关于Cron:</p>
+<p class="style2">Cron是UNIX/Linux系统下一个定时执行的指令，利用它可以定时触发网络文摘更新，也就是定时更新你的文摘，免去手动更新的麻烦，而且程序在后台运行，你感受不到速度的影响。（也可也以采用虚拟Cron, Pseudo-Cron，由访问用户触发。那么碰巧触发更新的那个用户，页面载入会特别慢）。</p>
+<p class="style6"><span class="style9">再添加Cron之前，你必须确定：</span></p>
+<p class="style8">你的空间拥有<a href="http://www.cpanel.net/" target="_blank">Cpanel</a>，向你的空间服务商询问是否拥有Cpanel。</p>
+<p class="style2"><span class="style8">如果你的空间没有Cpanel或无法使用Cron，可以告知 <a href="http://www.xoops.org.cn" target="_blank">http://xoops.org.cn</a>，定时触发你的网络文摘更新。</span><br>
+  <br>
+<b>方法</b>  
+<br />  
+<br />  
+1.<br>
+检查文摘更新接口文件, 在xoops根目录下的cache/digest<span lang="en-us">/digest</span>.php。该文件在模块安装时自动生成，可进入文摘模块的管理区检查该文件是否存在。如果不存在，可以"重新生成该文件"。</p>
+<p class="style2">2.<br>
+然后在Cpanel中添加Cron。关于如何添加Cron，可以阅读insraq翻译的“<a href="http://www.insraq.xoops.cn/html/add_cron_cp.htm" target="_blank">如何在Cpanel添加Cron</a>”</p>
+<p class="style2">需要注明的是，在Command to run 输入框中，需要填入调用Cron脚本的<strong>绝对路径</strong>，也就是你的cron.php所在的绝对路径。<br>
+  <br>
+例如：/usr/local/bin/php /用户XOOPS绝对路径/xoops/cache/digest<span lang="en-us">/digest</span>.php</p>
+<p class="style2">你可以向你的空间服务商所取绝对路径地址。</p>
+<p class="style2">3.<br>
+如果你的空间没有Cron功能,你可以请其他有cron功能的服务器或站点从外部触发你的文摘更新。<br />
+调用文件为 http://你的xoops网址/cache/digest<span lang="en-us">/digest</span>.php
+</p>
+<p class="style2">4.<br>
+如果路径http://你的xoops网址/cache/digest<span lang="en-us">/digest</span>.php不可用，请直接调用http://你的xoops网址/modules/digest/update.php
+</p>
+
+<p class="style2">　</p>
+<p class="style2"><strong>关于编码:</strong></p>
+<p class="style2">采用比php的iconv更适合中文编码转换的xconv模块，可以自动实现“繁-简-UTF8”的相互转换（前题是必须安装“Xoops Iconv”模块）。</p>
+<p class="style3">关于工作机理（以下内容是speedy写的，insraq未整理）:</p>
+<p class="style2">关于运行机理－－“网络文摘”模组的运行机理非常简单，就是根据你添加网站时给出的一个具体的网页地址，连接到那个网页，读取它的源代码，利用html标签，找出所有的超链接以及其超链接上的文字，再根据你在添加网站时的其它设置来对这些所有的超链接进行筛选，符合条件的就成为了该网站的“文摘”了。再把这些“文摘”（就是标题和其超链接）经过简繁的自动转换，存储到数据库，再在页面上读取数据库显示出来，整个“网络文摘”的流程就完成了。</p>
+<p class="style2">关于怎样准确的添加网站：</p>
+<p class="style2">下面是Speedy添加MOP网站的过程（以下内容是speedy写的，insraq未整理）</p>
+<p class="style2">这次的实战，我选取的战场是 <A href="http://www.mop.com" target=_blank>http://www.mop.com</A> ,猫扑，一个非常出名的BBS。<BR>
+  我们第一步的目标，是要找到它显示最近更新的帖子的那个页面。我们在浏览器输入 <A 
+href="http://www.mop.com" target=_blank>http://www.mop.com</A> ，来到猫扑的主页，再在主页上寻找它的BBS的主页，原来它的BBS就是一个叫做“大杂烩”的链接，点击它，我们发觉自己到了一个网页，浏览器显示它的地址为 <A 
+href="http://dzh.mop.com/mainFrame.jsp" 
+target=_blank>http://dzh.mop.com/mainFrame.jsp</A> ，我们看到，它的左部就是显示最近更新的帖子的标题，我们拉动左边的滑条，把左边的页面拉到底端，这时我们欣喜的发现了一个标题为“点击查看全部内容”的链接。我们立刻毫不犹豫的点击它，这时弹出一个新的窗口，浏览器显示地址为 <A href="http://dzh.mop.com/index_normal.jsp" 
+target=_blank>http://dzh.mop.com/index_normal.jsp</A> ，它的右边显示的就是最近更新的帖子的标题列表，这就是我们要找的东西了！！！但是别开心太早， <A 
+href="http://dzh.mop.com/index_normal.jsp" 
+target=_blank>http://dzh.mop.com/index_normal.jsp</A> 不是我们要找的地址，这个页面使用了框架，我们查看它的源代码，找到这么一行<BR>
+  ------------------------------------------------------------------------------</p>
+<p class="style2">&lt;frame name=&quot;right&quot; target=&quot;right&quot; src=&quot;/topic/listSubNormal.jsp&quot; scrolling=&quot;auto&quot;&gt;</p>
+<p class="style2">------------------------------------------------------------------------------</p>
+<p class="style2">通过这个，我们终于知道了它的真实地址，就是<A href="http://dzh.mop.com//topic/listSubNormal.jsp" 
+target=_blank>http://dzh.mop.com/topic/listSubNormal.jsp</A><BR>
+  第二步，我们细心的留意一下这个页面的那些帖子的超链接有什么共通的地方，终于我们发现它们之间都有一个“static”这个关键词，这样我们就大功告成了。<BR>
+</p>
+<p class="style4"><b>三、联系我们：</b></p>
+<p class="style2">Digest 开发支持：<a href="http://www.xoops.org.cn" target="_blank">http://xoops.org.cn</a><br>
+  Speedy的站点：<a href="http://www.bbface.com/" target="_blank">http://www.bbface.com/</a><br>
+  insraq的站点：<a href="http://insraq.xoops.cn/nuke/" target="_blank">http://insraq.xoops.cn/nuke/</a></p>
+<p class="style2"></p>
+</td></tr></table>
+</body>
+</html>

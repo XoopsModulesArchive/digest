@@ -1,0 +1,9 @@
+<div>
+<ul>
+<{foreach item=items from=$block.items}>
+<{if $block.columns == 2}><li style="width:49%;float:left;"><{else}><li width="100%"><{/if}>
+<{$items}></li>
+<{/foreach}>
+</ul>
+</div>
+<br clear="both" />

@@ -1,0 +1,21 @@
+2004-12-09: D.J.(phppp) http://xoops.org.cn
+===============================================================
+1 Digest 2.0 Beta is out
+2 To be continued ...
+
+2004-09-28: D.J.(phppp) http://www.xoops.org.cn, http://dev.xoops.org/modules/xfmod/project/?digest
+===========================================================================================================
+This is a brief changelog suggested by clark @ xoops.org.cn
+
+1 rewrote almost all the classes using xoops core kernel object.
+2 using a new tool 'xconv' for language string conversion.   
+  The module 'xconv' is built to substitute the php iconv functions,   
+  of which the Chinese gb-big5-utf8-unicode-pinyin conversion is available by default.
+3 added the xoops-snoopy class as an extra manner for feteching webpage content.
+4 added a single file digest.php as a simplier interface for automatic update by using cron-like tools.
+5 activated the 'online' column for hiding/displaying a certain url.
+6 bugfix: minlength typo correction, which caused the minlength config failure. 
+7 added readme file [thanks speedy, insraq]
+8 add onInstall to create update API file
+9 add upate API file check to admin
+10 add French language pack by outch

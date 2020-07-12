@@ -1,0 +1,104 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Digest 2.0 readme</title>
+<style type="text/css">
+<!--
+.style1 {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 36px;
+	font-weight: bold;
+}
+.style2 {font-family: "Times New Roman", Times, serif}
+.style3 {font-family: Georgia, "Times New Roman", Times, serif; font-weight: bold; }
+.style4 {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 18px;
+	font-weight: bold;
+}
+.style6 {font-family: Georgia, "Times New Roman", Times, serif; font-weight: bold; color: #006600; }
+.style8 {font-family: Georgia, "Times New Roman", Times, serif; font-weight: bold; color: #FF0000; }
+.style9 {color: #FF0000}
+-->
+</style>
+</head>
+
+<body>
+<table style="width:80%; float:center;border: dashed 2px; margin:20px; padding:10px;"><tr><td>
+<p align="center"><span class="style1">Xoops Module Digest 2.0</span>
+</p>
+<br /><br />
+<p class="style4">What is Digest</p>
+<p class="style2">
+Digest is a web content fetching module that allows you to fetch, display and monitor any desired content from internet and to display on your site. <br />
+<ol>Features:<br />
+<li>Supported fetch methods: CURL, fsockopen, fopen<br />
+<li>Multi-Categories<br />
+<li>The sites to be monitored, the content to be feteched can be configured by using a easy-to-use admin interface.<br />
+<li>Automatic update using cron job<br />
+<li>Allow users to test and submit sites.<br />
+<li>Table-free templates<br />
+</ol>
+</p>
+<p class="style4">1. Insatll</p>
+<p class="style2">Install the "Digest" module as usual.<br /><br />
+About Xconv module(Xoops Iconv): the xconv module is highly recommended for encoding conversion if PHP iconv module does not work well for you. Xconv is an extensible character encoding conversion module by which you can define your own conversion module. The full Chinese package has been available. <br />
+For details, visit: <a href="http://dev.xoops.org/modules/xfmod/project/?xconv"> Xconv @ Xoops Dev Forge</a></p>
+<p class="style4">2. How to use it</p>
+<p class="style2"><strong>Server status:</strong>
+<ul>Detect and help configure your sites.<br />
+<li>Fetch techniques: "CURL extension", "fsockopen function", "allow_url_fopen", you must have at least one available in order to use the Digest module. <br />
+<li>Encoding conversion: "Iconv", "Xconv", you need at least one to fetch webpages that use other charset than your default charset. <br />
+<li>Update API: you can update your Digest content automatically by calling this file externally, for instance, using cron job. <br />
+</ul>
+</p>
+<p class="style2"><strong>Add/edit sites: </strong>
+<ul>Add or edit websites that you would fetech contents. Brief guide:<br />
+<li>Title: abbreviation of the site<br />
+<li>URL: the URL of the page to be fetched<br />
+<li>Order: for display order<br />
+<li>Online: 1 - public; 0 - hide<br />
+<li>Maximum items: max items to be fetched<br />
+<li>Minmum length of valid title: item with shorter title will be ignored<br />
+<li>Charset of the webpage: if the webpage does not choose a charset for itself, you have to help it :=)<br />
+<li>Intermediate charset of the webpage: For some Chinese users only<br />
+<li>Update time: the time interval that allows for new content fetch (in minutes)<br />
+<li>Regexp for text filtering: some content may offend you, this filter will help a lot<br />
+<li>Criteria for acceptable address: use this criteria to choose your desired links<br />
+</ul>
+</p>
+<p class="style4">3. Case study</p>
+<p class="style2"><strong>Fetch "Recent Topics" at Xoops Official Site.</strong><br />
+<ul>
+<li>Title: Xoops<br />
+<li>URL: http://www.xoops.org<br />
+<li>Description: Xoops Official Forum<br />
+<li>Order: 1<br />
+<li>Online: 1<br />
+<li>Maximum items: 20<br />
+<li>Minmum length of valid title: 10<br />
+<li>Charset of the webpage: <br />
+<li>Update time: 30<br />
+<li>Regexp for text filtering: <br />
+<li>Criteria for acceptable address: viewtopic [comes from: http://www.xoops.org/modules/newbb/<b>viewtopic</b>.php?topic_id=...]<br />
+</ul>
+</p>
+<p class="style4">4. Tips</p>
+<p class="style3">Update Digest content automatically by using cron job</p>
+<p class="style2">
+<ol>
+<li>the API file: XOOPS_ROOT_PATH/cache/digest/digest.php. The file is created during installation, you may re-create whenever it is deleted.<br />
+<li>add cronjob: the command to run: YourPhpPath XOOPS_ROOT_PATH/cache/digest/digest.php<br />
+<li>if you do not have cron, let someone else help update your digest using his cron: (http://)YourXoopsURL/cache/digest/digest.php<br />
+<li>At least, you can use pseudo-cron: put the link (http://)YourXoopsURL/cache/digest/digest.php to some page of your site, such as the include/common.php<br />
+</ol>
+</p>
+<p class="style4"><b>5. Contact</b></p>
+<p class="style2">Xoops China: <a href="http://xoops.org.cn" target="_blank">http://xoops.org.cn</a><br />
+Acknowlegement: Speedy: http://bbface.com; insraq: http://insraq.xoops.cn/nuke
+</p>
+</td></tr></table>
+</body>
+</html>
